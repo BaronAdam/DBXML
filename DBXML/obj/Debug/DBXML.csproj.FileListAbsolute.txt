@@ -1,0 +1,12 @@
+C:\Users\adamo\source\repos\DBXML\DBXML\bin\Debug\DBXML.exe.config
+C:\Users\adamo\source\repos\DBXML\DBXML\bin\Debug\DBXML.exe
+C:\Users\adamo\source\repos\DBXML\DBXML\bin\Debug\DBXML.pdb
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.csprojAssemblyReference.cache
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.Properties.Resources.resources
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.csproj.GenerateResource.cache
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.csproj.CoreCompileInputs.cache
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.exe
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.pdb
+C:\Users\adamo\source\repos\DBXML\DBXML\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.FormMain.resources
+C:\Users\adamo\source\repos\DBXML\DBXML\obj\Debug\DBXML.csproj.CopyComplete
