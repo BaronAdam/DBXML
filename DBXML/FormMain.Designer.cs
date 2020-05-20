@@ -48,7 +48,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.buttonSendData = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelFileName = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -235,14 +235,14 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.buttonSendData);
-            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.labelFileName);
             this.groupBox3.Controls.Add(this.buttonChooseXMLFile);
             this.groupBox3.Location = new System.Drawing.Point(194, 111);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(191, 122);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Odczytywanie Pliku";
+            this.groupBox3.Text = "Odczytywanie pliku";
             // 
             // buttonSendData
             // 
@@ -253,15 +253,15 @@
             this.buttonSendData.TabIndex = 2;
             this.buttonSendData.Text = "Wyślij dane do bazy";
             this.buttonSendData.UseVisualStyleBackColor = true;
+            this.buttonSendData.Click += new System.EventHandler(this.buttonSendData_Click);
             // 
-            // label7
+            // labelFileName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 49);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Nie wybrano pliku";
+            this.labelFileName.Location = new System.Drawing.Point(7, 49);
+            this.labelFileName.Name = "labelFileName";
+            this.labelFileName.Size = new System.Drawing.Size(176, 38);
+            this.labelFileName.TabIndex = 1;
+            this.labelFileName.Text = "Nie wybrano pliku";
             // 
             // FormMain
             // 
@@ -274,14 +274,13 @@
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "XML";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -307,7 +306,7 @@
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelFileName;
         private System.Windows.Forms.Button buttonSendData;
     }
 }

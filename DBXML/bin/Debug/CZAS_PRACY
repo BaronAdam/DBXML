@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <table-name>CZAS_PRACY</table-name>
+    <row>
+        <id_czas_pracy>0</id_czas_pracy>
+        <godzina_rozpoczecia>14.05.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>14.05.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>1</id_czas_pracy>
+        <godzina_rozpoczecia>29.04.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>29.04.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>2</id_czas_pracy>
+        <godzina_rozpoczecia>30.03.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>30.03.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>3</id_czas_pracy>
+        <godzina_rozpoczecia>11.05.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>11.05.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>4</id_czas_pracy>
+        <godzina_rozpoczecia>07.05.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>07.05.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>5</id_czas_pracy>
+        <godzina_rozpoczecia>02.05.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>02.05.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>6</id_czas_pracy>
+        <godzina_rozpoczecia>16.05.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>16.05.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>7</id_czas_pracy>
+        <godzina_rozpoczecia>13.04.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>13.04.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>8</id_czas_pracy>
+        <godzina_rozpoczecia>21.04.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>21.04.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+    <row>
+        <id_czas_pracy>9</id_czas_pracy>
+        <godzina_rozpoczecia>22.04.2020 08:00:00</godzina_rozpoczecia>
+        <godzina_zakonczenia>22.04.2020 16:00:00</godzina_zakonczenia>
+        <id_pracownik>0</id_pracownik>
+    </row>
+</table>

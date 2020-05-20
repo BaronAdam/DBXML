@@ -3,8 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DBXML
 {
@@ -69,6 +71,42 @@ namespace DBXML
             }
 
             return data;
+        }
+
+        public static void SendData(OracleConnection con, List<List<string>> data)
+        {
+            string tableName = data[0][0];
+
+            List<List<string>> localData = new List<List<string>>(data);
+
+            localData.RemoveAt(0);
+            try
+            {
+                foreach (var row in localData)
+                {
+                    StringBuilder sql = new StringBuilder("INSERT INTO ");
+                    sql.Append(tableName.ToLower());
+                    sql.Append(" VALUES (");
+                    int total = row.Count();
+                    for (int i = 0; i < total; i++)
+                    {
+                        sql.Append(row[i]);
+                        if (i != total - 1)
+                        {
+                            sql.Append(", ");
+                        }
+                    }
+
+                    sql.Append(")");
+
+                    OracleCommand cmd = new OracleCommand(sql.ToString(), con);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Błąd");
+            }
         }
     }
 }

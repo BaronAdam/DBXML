@@ -97,9 +97,46 @@ namespace DBXML
             }
         }
 
+        List<List<string>> DataFromXMLFile;
+
         private void buttonChooseXMLFile_Click(object sender, EventArgs e)
         {
-            XmlDocument xmlDocument = XML.CheckIfValidXMLFile();
+            string fileName;
+
+            XmlDocument xmlDocument = XML.CheckIfValidXMLFile(Connection, out fileName);
+
+            if(XML.CheckIfXMLDocumentIsEmpty(xmlDocument))
+            {
+                MessageBox.Show("Nieprawidłowy plik XML", "Błąd");
+                SetFileName();
+                buttonSendData.Enabled = false;
+                DataFromXMLFile.Clear();
+                return;
+            }
+
+            SetFileName(fileName);
+
+            buttonSendData.Enabled = true;
+
+            DataFromXMLFile = XML.GetDataFromXML(xmlDocument, Connection);
+        }
+
+        public void SetFileName(string name)
+        {
+            if (name != null)
+            {
+                labelFileName.Text = name;
+            }            
+        }
+
+        public void SetFileName()
+        {
+            labelFileName.Text = "Nie wybrano pliku";
+        }
+
+        private void buttonSendData_Click(object sender, EventArgs e)
+        {
+            SQL.SendData(Connection, DataFromXMLFile);
         }
     }
 }
